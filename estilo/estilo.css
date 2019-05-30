@@ -1,0 +1,212 @@
+*{
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0;
+  box-sizing: border-box;
+}
+body{
+  font-family:"Times New Roman", Georgia, Serif;
+  margin:0;
+  padding:0;
+  min-width: 300px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows:min-content 1fr min-content;
+}
+header{
+  padding:3px 10px;
+  background:#F9AE33;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height:65px;
+}
+#logo{
+  display: block;
+}
+header nav{
+  width: 100%;
+  display: none;
+}
+header nav ul{
+  margin: 5px 0;
+  padding: 0;
+  text-align: justify;
+}
+header nav ul li{
+  display:inline;
+}
+header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  margin: auto;
+}
+header nav ul li a img{
+  width: 25px;
+  margin:0;
+  padding: 0;
+}
+header nav ul li a:hover{
+border-bottom: thick solid #ddd;
+margin: auto 3px;
+}
+
+@keyframes loanding {
+    0%{
+      left: 0;
+      width: 0vw;
+    }
+    50%{
+      left: 0;
+      width: 100vw;
+    }
+    100%{
+      left: 100vw;
+      width: 0vw;
+    }
+}
+body.loanding header::after{
+  content: ' ';
+  display: block;
+  background: #dddd;
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  animation-name:loanding;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+footer{
+  padding:10px;
+  background:#F9AE33;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+}
+section{
+  padding: 0;
+  max-width: 960px;
+  width: 100vw;
+  margin: 0 auto;
+  overflow: auto;/*pra fazer a barra de rolarm funcionar o body deve ter
+                  autura de 100vh a section margin:0 auto e overflow auto */
+}
+section form label{
+  display:block;
+  margin: 20px 0;
+  color:#444;
+}
+section form input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+section form button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  background-color:#DF9D2E;
+  color: #fff;
+}
+section > div{
+  position: relative;
+  left: 0;
+  display: none;
+  transition: left 0.3s;
+}
+.fundo-1{
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  background-color: #444;
+  background-image:url('../img/fundo-1.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+
+}
+@media only screen and (max-width:640px) {
+  .fundo-1{height: 250px; }
+}
+section > div.active{
+  display: block;
+  padding: 20px;
+}
+section > div.active p{
+  text-align: justify;
+  color:#444444;
+}
+section >div.active h2{
+  color: #DF9D2E;
+}
+body.loanding section > div {
+  left: -100vw;
+}
+/*Tabelas*/
+#menu table,table tr,table tr th,table tr td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: #fff;
+  border-left:thick solid #fff;
+  border-bottom:solid 2px #DDDDDD;
+  text-align: left;
+  font-family:monospace;
+}
+#menu table{
+  margin: auto;
+  padding: 5px;
+  width: 60%;
+}
+
+#menu table tr th{
+  font-size: 16px;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+}
+#menu table tr td{
+  color:#585858;
+  font-size: 14px;
+  font-style:italic;
+  padding: 5px 2px;
+}
+#menu button{
+  padding: 5px;
+  border-radius: 15px;
+  border:none;
+  width: 100%;
+  background-color:#DF9D2E;
+  color: #fff;
+}
+#menu .btn-flutuante{
+  position:fixed;bottom:40px;right: 15px;
+
+}
+#menu .btn-flutuante button img{
+  width: 30px;
+}
+hr{
+  width: 25%;
+  height: 2px;
+  display: block;
+  background-color: #ddd;
+  margin:0 0 35px 0;
+}#menu fieldset{
+  border-radius: 2px;
+  border: 1px dotted grey;
+  padding: 15px 0;
+  margin: 30px auto;
+}
+#menu legend{
+  color: grey;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: monospace;
+  text-align: center;
+}
