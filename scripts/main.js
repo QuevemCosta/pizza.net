@@ -1,6 +1,8 @@
 // ----------------Navegcão--------------
 //HOME
 document.querySelector('#navhome').addEventListener('click',(e=>{
+  document.querySelector('#capa').classList.add('active')
+
     document.getElementById('navhome').style.borderBottom = "thick solid #ddd";
     document.getElementById('navmenu').style.borderBottom = "none";
     document.getElementById('navsobre').style.borderBottom = "none";
@@ -26,6 +28,7 @@ document.querySelector('#navmenu').addEventListener('click',(e=>{
     }))
     //SOBRE
 document.querySelector('#navsobre').addEventListener('click',(e=>{
+
   document.getElementById('navhome').style.borderBottom = "none";
   document.getElementById('navmenu').style.borderBottom = "none";
   document.getElementById('navsobre').style.borderBottom = "thick solid #ddd";
@@ -39,6 +42,7 @@ document.querySelector('#navsobre').addEventListener('click',(e=>{
       }))
 //CONTATO
 document.querySelector('#navcontato').addEventListener('click',(e=>{
+
   document.getElementById('navhome').style.borderBottom = "none";
   document.getElementById('navmenu').style.borderBottom = "none";
   document.getElementById('navsobre').style.borderBottom = "none";
@@ -67,7 +71,7 @@ window.addEventListener('load',()=>{
       setTimeout(()=>{
         document.body.classList.remove('loanding')
       },200)
-    },200)
+    },300)
   }))
 })
 //animção seguint ao login
