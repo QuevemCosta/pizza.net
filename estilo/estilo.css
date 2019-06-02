@@ -50,8 +50,8 @@ header nav ul li a img{
   padding: 0;
 }
 header nav ul li a:hover{
-border-bottom: 2px solid #ddd;
-margin: auto 3px;
+border-bottom:px solid #ddd;
+margin: auto 2px;
 }
 
 @keyframes loanding {
@@ -170,6 +170,9 @@ body.loanding section > div {
   left: -100vw;
 }
 /*Tabelas*/
+#menu{
+  padding: 20px;
+}
 #menu table,table tr,table tr th,table tr td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -197,7 +200,7 @@ body.loanding section > div {
   font-style:italic;
   padding: 5px 2px;
 }
-#menu button{
+#menu button,#contato button{
   padding: 5px;
   border-radius:15px;
   border:none;
@@ -205,11 +208,11 @@ body.loanding section > div {
   background-color:#DF9D2E;
   color: #fff;
 }
-#menu .btn-flutuante{
+.btn-flutuante{
   position:fixed;bottom:40px;right: 15px;
-
+  display: none;
 }
-#menu .btn-flutuante button img{
+.btn-flutuante button img{
   width: 30px;
 }
 hr{
@@ -231,6 +234,41 @@ hr{
   font-family: monospace;
   text-align: center;
 }
+#contato{
+  margin: 0 auto;
+  padding: 50px auto;
+  background-color: #333;
+}
+#contato div{
+  text-align:left;
+  padding: 20px;
+  margin: 0;
+}
+#contato div h1{
+  text-align: center;
+  color: orange;
+
+}
+#contato div.rede-social a img{
+  width: 50px;
+  margin:auto;
+  padding: 0;
+  display: inline-block;
+}
+#contato div.rede-social a h2{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  }
+  #sobre{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+  }
+  #sobre p{
+    color: #fff;
+  }
 /*imagens*/
 .duas-colunas{
   border:none;
@@ -288,6 +326,7 @@ div.galeria a img{
 }
 /*variaveis*/
 @media only screen and (max-width:640px) {
+  #menu{padding: 20px;}
   .fundo-1{height: 250px; }
   .subcapa{
     height: 1024px;
@@ -310,5 +349,8 @@ div.galeria a img{
   }
     div.galeria a img{
       max-height: 220px;
+    }
+    .btn-flutuante{
+      display: flex;
     }
 }

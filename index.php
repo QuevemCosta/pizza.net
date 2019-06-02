@@ -40,7 +40,7 @@
     <div id="capa" class="fundo-1"></div><!--badkgroundo da capa-->
       <div id="home" class="">
         <div class="subcapa">
-          <h1>Titilo de quelquer coiza</h1>
+          <h1>Home</h1>
           <div class="duas-colunas">
             <p>
               <h2>Home</h2>
@@ -185,7 +185,7 @@
         </fieldset>
         <div class="btn-flutuante">
           <button type="button" onclick="" title="Ligue agora mesmo">
-            <img src="icons/contato.png">
+            <a href="tel:+5593991155519"><img src="icons/contato.png"></a>
           </button>
         </div>
       </div>
@@ -193,23 +193,44 @@
 
       <!--contato-->
       <div id="contato">
-        <h2>Contato</h2>
+        <div>
+          <h1>Contatos</h1>
+        </div>
+        <div class="rede-social" title="Nosso zap">
+          <a href=""><img src="icons/whatsapp.png">
+          <h2>+55 93 991999999</h2></a>
+        </div>
+        <div class="rede-social" title="Curta nossa fanpag">
+          <a href="#"><img src="icons/facebook.png">
+          <h2>Curta nossa página</h2></a>
+        </div>
+        <div class="rede-social" title="Siganos no Instagrn">
+          <a href="#"><img src="icons/instagran.png">
+          <h2>Siga nosso Instagran</h2></a>
+        </div>
+        <div class="btn-flutuante">
+          <button type="button" onclick="" title="Ligue agora mesmo">
+            <a href="tel:+5593991155519"><img src="icons/contato.png"></a>
+          </button>
+        </div>
       </div>
       <!--contato-->
 
       <!--Sobre-->
       <div id="sobre">
         <h2>Sobre</h2>
-        <p>
-          Lorem Ipsum is simply dummy text
-           of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make
-            a type specimen book. It has survived not only five
-             centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in t
-        </p>
+        <div>
+          <p>
+            Lorem Ipsum is simply dummy text
+             of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make
+              a type specimen book. It has survived not only five
+               centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in t
+          </p>
+        </div>
       </div>
       <!--Sobre-->
 
