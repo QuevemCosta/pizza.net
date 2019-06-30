@@ -188,6 +188,11 @@
             <a href="tel:93991155519"><img src="icons/contato.png"></a>
           </button>
         </div>
+        <div class="btn-flutuante-zap">
+          <button type="button" onclick="" title="WhatsApp">
+            <a href="https://api.whatsapp.com/send?phone=5593991155519"><img src="icons/whatsapp.png"></a>
+          </button>
+        </div>
       </div>
       <!--menu-->
 

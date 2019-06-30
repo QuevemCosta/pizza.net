@@ -212,8 +212,12 @@ body.loanding section > div {
   position:fixed;bottom:40px;right: 15px;
 
 }
-.btn-flutuante button img{
+.btn-flutuante button img,.btn-flutuante-zap button img{
   width: 30px;
+}
+.btn-flutuante-zap{
+  position:fixed;bottom:40px;right: 60px;
+
 }
 hr{
   width: 25%;
